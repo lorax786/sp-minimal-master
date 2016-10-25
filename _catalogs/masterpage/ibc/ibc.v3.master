@@ -1,0 +1,28 @@
+<%@ Master Language="C#" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/15/Welcome.ascx" %>
+<%@ Register TagPrefix="wssuc" TagName="MUISelector" src="~/_controltemplates/15/MUISelector.ascx" %>
+<!DOCTYPE HTML>
+<html>
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+	<meta name="GENERATOR" content="Microsoft SharePoint"/>
+	<meta name="progid" content="SharePoint.WebPartPage.Document"/>
+	<meta http-equiv="Expires" content="0"/>
+	<SharePoint:RobotsMetaTag runat="server"/>
+	<title id="onetidTitle">Innovation Month | <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server"/></title>	
+	<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server"/>
+	<SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true"/>
+	<SharePoint:SPShortcutIcon runat="server" IconUrl="../Style%20Library/imonth/images/favicon.ico"/>
+	
+    <!-- Gogle Analytics Goes Here -->
+	
+</head>
+<body>		
+    <asp:ContentPlaceHolder id="PlaceHolderMain" runat="server"></asp:ContentPlaceHolder>
+</body>
+
+</html>
